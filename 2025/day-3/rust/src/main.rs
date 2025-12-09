@@ -1,6 +1,6 @@
 use std::{
     env,
-    fs::{self, File},
+    fs::File,
     io::{self, BufRead},
     path::Path,
     process,
@@ -62,7 +62,7 @@ fn main() {
         let mut start: usize = 0;
         let mut end: usize = bank.len() - MAX_BATTERIES;
         let mut chosen_batteries: Vec<u8> = Vec::with_capacity(MAX_BATTERIES);
-        for _ in (0..MAX_BATTERIES) {
+        for _ in 0..MAX_BATTERIES {
             let (max_battery_idx, max_battery) = bank[start..=end]
                 .iter()
                 .enumerate()
