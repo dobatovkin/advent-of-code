@@ -1,5 +1,4 @@
 use std::{
-    collections::HashSet,
     env,
     fs::File,
     io::{self, BufRead},
